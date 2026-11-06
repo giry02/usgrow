@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" fill="none">
+  <defs>
+    <linearGradient id="top" x1="216" y1="140" x2="416" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDE9EE"/>
+    </linearGradient>
+    <linearGradient id="front" x1="149" y1="257" x2="429" y2="508" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#164574"/>
+      <stop offset="1" stop-color="#062653"/>
+    </linearGradient>
+    <linearGradient id="side" x1="385" y1="212" x2="521" y2="467" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C3261"/>
+      <stop offset="1" stop-color="#041A3C"/>
+    </linearGradient>
+    <linearGradient id="lowSide" x1="160" y1="424" x2="250" y2="461" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C5D8E1"/>
+      <stop offset="1" stop-color="#E2EBEF"/>
+    </linearGradient>
+    <linearGradient id="circuit" x1="117" y1="418" x2="526" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00A69A"/>
+      <stop offset="0.56" stop-color="#00B8A9"/>
+      <stop offset="1" stop-color="#27D7C2"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="298" y1="300" x2="360" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8EFF1" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#E8EFF1" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#E8EFF1" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <clipPath id="tallFront"><path d="M388 209 458 249V484L388 444Z"/></clipPath>
+    <clipPath id="middleFront"><path d="M239 303 309 343V494L239 454Z"/></clipPath>
+    <clipPath id="lowFront"><path d="M90 391 160 431V505L90 465Z"/></clipPath>
+  </defs>
+
+  <!-- An isometric drafting plane gives the structure a quiet, precise setting. -->
+  <path d="M55 432 315 282 603 448 343 598Z" fill="url(#ground)"/>
+  <g stroke="#9DB3BF" stroke-opacity="0.2" stroke-width="0.8">
+    <path d="M55 432 343 598M98 407 386 573M141 382 429 548M185 357 473 523M228 332 516 498M271 307 559 473M315 282 603 448"/>
+    <path d="M55 432 315 282M103 460 363 310M151 487 411 337M199 515 459 365M247 543 507 393M295 570 555 420M343 598 603 448"/>
+  </g>
+  <path d="M76 420 336 570 581 429" stroke="#9DB3BF" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M76 415V425M331 567 341 573M578 424 584 434" stroke="#9DB3BF" stroke-opacity="0.55"/>
+
+  <g fill="#062653" fill-opacity="0.12" filter="url(#shadow)">
+    <path d="M83 466 174 411 278 463 184 519Z"/>
+    <path d="M230 456 332 398 429 453 325 513Z"/>
+    <path d="M379 446 478 388 576 445 475 503Z"/>
+  </g>
+
+  <!-- The three volumes share a common footprint and rise toward the light. -->
+  <g>
+    <path d="M388 209 458 249V484L388 444Z" fill="url(#front)"/>
+    <path d="M458 249 548 197V432L458 484Z" fill="url(#side)"/>
+    <path d="M388 209 478 157 548 197 458 249Z" fill="url(#top)"/>
+    <path d="M388 209 458 249 548 197M458 249V484" stroke="#98B4C7" stroke-opacity="0.46" stroke-width="1"/>
+    <path d="M388 209 478 157 548 197" stroke="white" stroke-width="1.4"/>
+    <g clip-path="url(#tallFront)" stroke="#7190AA" stroke-opacity="0.19" stroke-width="1">
+      <path d="M405 210V468M423 220V478M441 230V488"/>
+      <path d="M380 383 466 433M380 394 466 444"/>
+    </g>
+    <path d="M474 275 531 242M474 282 511 261" stroke="#4B718F" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M474 448 531 415" stroke="#4B718F" stroke-opacity="0.3"/>
+    <path d="M416 210 478 174 520 198 458 234Z" stroke="#9BB9C7" stroke-opacity="0.58"/>
+    <path d="M478 174V184L511 203" stroke="#B2C9D3" stroke-opacity="0.7"/>
+  </g>
+
+  <g>
+    <path d="M239 303 309 343V494L239 454Z" fill="url(#front)"/>
+    <path d="M309 343 399 291V442L309 494Z" fill="url(#side)"/>
+    <path d="M239 303 329 251 399 291 309 343Z" fill="url(#top)"/>
+    <path d="M239 303 309 343 399 291M309 343V494" stroke="#98B4C7" stroke-opacity="0.46" stroke-width="1"/>
+    <path d="M239 303 329 251 399 291" stroke="white" stroke-width="1.4"/>
+    <g clip-path="url(#middleFront)" stroke="#7190AA" stroke-opacity="0.19" stroke-width="1">
+      <path d="M256 305V473M274 315V483M292 325V493"/>
+      <path d="M231 408 317 458M231 419 317 469"/>
+    </g>
+    <path d="M325 369 382 336M325 376 362 355" stroke="#4B718F" stroke-opacity="0.5"/>
+    <path d="M325 458 382 425" stroke="#4B718F" stroke-opacity="0.3"/>
+    <path d="M267 304 329 268 371 292 309 328Z" stroke="#9BB9C7" stroke-opacity="0.58"/>
+  </g>
+
+  <g>
+    <path d="M90 391 160 431V505L90 465Z" fill="url(#front)"/>
+    <path d="M160 431 250 379V453L160 505Z" fill="url(#lowSide)"/>
+    <path d="M90 391 180 339 250 379 160 431Z" fill="url(#top)"/>
+    <path d="M90 391 160 431 250 379M160 431V505" stroke="#98B4C7" stroke-opacity="0.66" stroke-width="1"/>
+    <path d="M90 391 180 339 250 379" stroke="white" stroke-width="1.4"/>
+    <g clip-path="url(#lowFront)" stroke="#7190AA" stroke-opacity="0.19" stroke-width="1">
+      <path d="M107 393V480M125 403V490M143 413V500"/>
+    </g>
+    <path d="M177 457 233 425M177 464 214 443" stroke="#7695A6" stroke-opacity="0.5"/>
+    <path d="M118 392 180 356 222 380 160 416Z" stroke="#9BB9C7" stroke-opacity="0.58"/>
+  </g>
+
+  <!-- A continuous circuit climbs the step faces and traces each upper edge. -->
+  <path d="M117 393 160 418 234 375V300L309 343 382 301V206L458 250 526 211" stroke="#062653" stroke-opacity="0.12" stroke-width="17" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 4)"/>
+  <path d="M117 393 160 418 234 375V300L309 343 382 301V206L458 250 526 211" stroke="url(#circuit)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M117 390 160 415 231 374M239 300 309 340 379 300M387 207 458 247 526 208" stroke="#8CF3DD" stroke-opacity="0.7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F4FFFC" stroke="#00B8A9" stroke-width="3">
+    <ellipse cx="117" cy="393" rx="6.4" ry="4"/>
+    <ellipse cx="309" cy="343" rx="6.4" ry="4"/>
+    <ellipse cx="526" cy="211" rx="7.5" ry="4.5"/>
+  </g>
+  <path d="M526 211V179" stroke="#00B8A9" stroke-width="1.5"/>
+  <circle cx="526" cy="176" r="4" fill="#00B8A9"/>
+  <circle cx="526" cy="176" r="9" stroke="#00B8A9" stroke-opacity="0.24"/>
+
+  <!-- Fine extension lines echo an architectural drawing without adding labels. -->
+  <g stroke="#849EAD" stroke-width="0.9" stroke-opacity="0.48">
+    <path d="M478 157V122M548 197 578 180M487 126 565 171"/>
+    <path d="M483 129 491 123M561 175 569 169"/>
+    <path d="M570 214V420M564 217 576 210M564 424 576 417" stroke-dasharray="2 5"/>
+    <path d="M91 476 72 487M160 515 141 526M78 490 144 528"/>
+    <path d="M74 493 82 487M140 531 148 525"/>
+  </g>
+  <g fill="#00B8A9" fill-opacity="0.6">
+    <circle cx="76" cy="420" r="2"/>
+    <circle cx="581" cy="429" r="2"/>
+  </g>
+</svg>

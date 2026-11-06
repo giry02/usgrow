@@ -1,0 +1,9 @@
+**/.openai/
+**/node_modules/
+**/__pycache__/
+*.pyc
+tmp/
+~$*
+*.tar.gz
+.DS_Store
+Thumbs.db
